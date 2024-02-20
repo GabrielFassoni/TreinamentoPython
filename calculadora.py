@@ -1,18 +1,23 @@
-class calculadora():
-    def adicao(num1 + num2):
-    resultado = num1 + num2
-    print (resultado)
+class Calculadora:
+    def __init__(self):
+        self.resultado = 0
 
-    def subtracao (num1 - num2):
-   resultado = num1 - num2
-    print (resultado)
+    def adicao(self, num1, num2):
+        self.resultado = num1 + num2
+
+    def subtracao(self, num1, num2):
+        self.resultado = num1 - num2
+
+    def divisao(self, num1, num2):
+        self.resultado = num1 / num2
+
+    def multiplicacao(self, num1, num2):
+        self.resultado = num1 * num2
+
+    def exibir_resultado(self):
+        print(self.resultado)
 
 
-    def divisao (num1 / num2):
-    resultado = num1 / num2
-    print (resultado)
-
-
-    def multiplicacao (num1 * num2):
-   resultado = num1 * num2
-    print (resultado)
+calculadora = Calculadora()
+calculadora.adicao(num1=10, num2=20)
+calculadora.exibir_resultado()
