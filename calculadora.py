@@ -16,8 +16,3 @@ class Calculadora:
 
     def exibir_resultado(self):
         print(self.resultado)
-
-
-calculadora = Calculadora()
-calculadora.adicao(num1=10, num2=20)
-calculadora.exibir_resultado()
